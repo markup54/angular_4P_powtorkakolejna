@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'powtorka_kolejna_4P';
+  //https://angular.io/guide/router
+  
 }
