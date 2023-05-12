@@ -1,1 +1,19 @@
-<p>lista-obiektow works!</p>
+<h2>Lista rzeczy</h2>
+<ol>
+    <li *ngFor ="let rzecz of rzeczy">
+        {{rzecz}}
+    </li>
+</ol>
+<hr>
+<ul>
+    <li *ngFor = "let todo of todos" (click)="modyfikuj(todo)">
+        Do zrobienia : {{todo.nazwa}} <br>
+        Termin : {{todo.termin}}
+    </li>
+</ul>
+<div *ngIf="klikniete_todo">
+    Szczegóły
+    Nazwa {{klikniete_todo.nazwa}}
+    <input type="checkbox" 
+    name="czy" [(ngModel)]="klikniete_todo.zrobione">
+</div>

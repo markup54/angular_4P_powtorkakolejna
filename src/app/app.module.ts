@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { KalkulatorNwdComponent } from './kalkulator-nwd/kalkulator-nwd.component';
 import { ListaObiektowComponent } from './lista-obiektow/lista-obiektow.component';
 import { FormularzComponent } from './formularz/formularz.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormularzComponent } from './formularz/formularz.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
