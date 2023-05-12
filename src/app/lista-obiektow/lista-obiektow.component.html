@@ -14,6 +14,13 @@
 <div *ngIf="klikniete_todo">
     Szczegóły
     Nazwa {{klikniete_todo.nazwa}}
+    Opis:
+    <input type="number" name="cos" [(ngModel)]="klikniete_todo.priorytet">
     <input type="checkbox" 
     name="czy" [(ngModel)]="klikniete_todo.zrobione">
 </div>
+
+<app-szczeg [todoprzekazane]="klikniete_todo" >
+
+</app-szczeg>
+

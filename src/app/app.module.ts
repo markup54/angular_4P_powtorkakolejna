@@ -7,13 +7,15 @@ import { KalkulatorNwdComponent } from './kalkulator-nwd/kalkulator-nwd.componen
 import { ListaObiektowComponent } from './lista-obiektow/lista-obiektow.component';
 import { FormularzComponent } from './formularz/formularz.component';
 import { FormsModule } from '@angular/forms';
+import { SzczegComponent } from './szczeg/szczeg.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     KalkulatorNwdComponent,
     ListaObiektowComponent,
-    FormularzComponent
+    FormularzComponent,
+    SzczegComponent
   ],
   imports: [
     BrowserModule,
